@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.wordpress.keerthanasriranga.logintest.Main2Activity"
+    tools:showIn="@layout/app_bar_main2">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Graph"
+        android:id="@+id/graphButton"
+        android:onClick="getGraph"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+    </Button>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:name="layout.BlankFragment"
+        tools:layout="@layout/fragment_blank">
+
+    </fragment>
+
+    <NumberPicker
+        android:layout_width="160dp"
+        android:layout_height="270dp"
+        android:id="@+id/numberPicker1"
+        android:layout_alignBaseline="@+id/numberPicker2"
+        android:layout_alignBottom="@+id/numberPicker2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <NumberPicker
+        android:layout_width="160dp"
+        android:layout_height="270dp"
+        android:id="@+id/numberPicker2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="188dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:id="@+id/imageView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/target_for_the_day"
+        android:layout_marginTop="37dp"
+
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/textview"
+        android:layout_width="1200dp"
+        android:layout_height="30dp"
+        android:id="@+id/textView3"
+        android:layout_marginTop="175dp"
+        android:layout_marginBottom="13dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:background="#a3a3c2"
+        android:paddingTop="10px"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
